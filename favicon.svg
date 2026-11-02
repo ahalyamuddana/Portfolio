@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="cyberGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f0ff" />
+      <stop offset="100%" stop-color="#9d4edd" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="#060810" stroke="rgba(0, 240, 255, 0.4)" stroke-width="2" />
+  <circle cx="32" cy="32" r="26" fill="rgba(13, 20, 36, 0.6)" />
+  <text x="32" y="41" font-family="'Outfit', system-ui, sans-serif" font-size="26" font-weight="900" fill="url(#cyberGrad)" text-anchor="middle" filter="url(#glow)">A</text>
+  <circle cx="48" cy="18" r="4" fill="#00f0ff" filter="url(#glow)" />
+</svg>

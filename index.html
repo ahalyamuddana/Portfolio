@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muddana Ahalya | IT Engineer & AI/ML Developer Portfolio</title>
+    <meta name="description"
+        content="Portfolio of Muddana Ahalya - B.Tech Information Technology Graduate, AI/ML Developer, and Full Stack Enthusiast. View projects, technical skills, and experience.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Ambient Light Blob Background -->
+    <div id="blob"></div>
+    <div id="blob-secondary"></div>
+    <div id="blur"></div>
+    <div class="noise-overlay"></div>
+
+    <!-- Navigation Header -->
+    <header id="navbar">
+        <nav class="nav-container">
+            <a href="#home" class="logo" aria-label="Muddana Ahalya Portfolio Home">
+                Muddana <span class="logo-accent">Ahalya</span>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#certifications" class="nav-link">Certificates</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <a href="Ahalya_resume.pdf" download="Ahalya_resume.pdf"
+                    class="btn btn-outline nav-cv-btn" id="nav-download-cv">
+                    <i class="fa-solid fa-file-arrow-down"></i> Resume
+                </a>
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Mobile Drawer Navigation -->
+        <div class="mobile-drawer" id="mobile-drawer">
+            <ul class="mobile-nav-links">
+                <li><a href="#home" class="mobile-link"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="#about" class="mobile-link"><i class="fa-solid fa-user"></i> About</a></li>
+                <li><a href="#experience" class="mobile-link"><i class="fa-solid fa-briefcase"></i> Experience</a></li>
+                <li><a href="#projects" class="mobile-link"><i class="fa-solid fa-code"></i> Projects</a></li>
+                <li><a href="#skills" class="mobile-link"><i class="fa-solid fa-layer-group"></i> Skills</a></li>
+                <li><a href="#education" class="mobile-link"><i class="fa-solid fa-graduation-cap"></i> Education</a>
+                </li>
+                <li><a href="#certifications" class="mobile-link"><i class="fa-solid fa-certificate"></i>
+                        Certifications</a></li>
+                <li><a href="#contact" class="mobile-link"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+            </ul>
+            <div class="mobile-drawer-footer">
+                <a href="Ahalya_resume.pdf" download="Ahalya_resume.pdf"
+                    class="btn btn-primary btn-block">
+                    <i class="fa-solid fa-download"></i> Download Resume
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <h2 class="greeting hidden">Hello World, I'm</h2>
+                <h1 class="name hidden">Muddana Ahalya</h1>
+
+                <h3 class="dynamic-title hidden">
+                    <span class="title-prefix">Passionate </span>
+                    <span class="typing-text" id="typing-text">Python Full Stack Developer</span>
+                    <span class="cursor">|</span>
+                </h3>
+
+                <p class="hero-bio hidden">
+                    B.Tech graduate in <strong>Information Technology</strong> from QIS College with hands-on experience
+                    in <strong>Full-Stack Development</strong>, <strong>Machine Learning</strong>, and <strong>IoT Telemetry</strong>. Dedicated to engineering reliable, scalable, and impact-driven digital
+                    solutions.
+                </p>
+
+                <div class="hero-actions hidden">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>Explore Projects</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <a href="Ahalya_resume.pdf" download="Ahalya_resume.pdf" class="btn btn-secondary">
+                        <i class="fa-solid fa-download"></i>
+                        <span>Download CV</span>
+                    </a>
+                    <a href="#contact" class="btn btn-ghost">
+                        <span>Let's Talk</span>
+                    </a>
+                </div>
+
+                <div class="social-bar hidden">
+                    <a href="mailto:muddanaahlaya@gmail.com" class="social-btn" aria-label="Email Ahalya"
+                        title="Email: muddanaahlaya@gmail.com">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                    <a href="tel:+919515937378" class="social-btn" aria-label="Call Ahalya"
+                        title="Phone: +91 9515937378">
+                        <i class="fa-solid fa-phone"></i>
+                    </a>
+                    <a href="https://github.com/ahalyamuddana" target="_blank" rel="noopener noreferrer"
+                        class="social-btn" aria-label="GitHub Profile" title="GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/muddana-ahalya" target="_blank" rel="noopener noreferrer"
+                        class="social-btn" aria-label="LinkedIn Profile" title="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <div class="location-pill">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Ongole, India</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-visual hidden">
+                <div class="profile-card-wrapper">
+                    <div class="card-glow"></div>
+                    <div class="profile-frame">
+                        <img src="ahalya_profile.jpg" alt="Muddana Ahalya - Software & AI/ML Engineer"
+                            class="profile-img">
+                        <div class="floating-tech-badge badge-top-right">
+                            <i class="fa-brands fa-python"></i>
+                            <span>Python & ML</span>
+                        </div>
+                        <div class="floating-tech-badge badge-bottom-left">
+                            <i class="fa-solid fa-brain"></i>
+                            <span>Deep Learning</span>
+                        </div>
+                        <div class="floating-tech-badge badge-bottom-right">
+                            <i class="fa-solid fa-microchip"></i>
+                            <span>IoT & Sensors</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+
+        <!-- About Section -->
+        <section id="about" class="about-section hidden">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+            </div>
+
+            <div class="about-grid">
+                <div class="glass-card about-main-card">
+                    <div class="card-highlight-bar"></div>
+                    <div class="about-lead">
+                        <p>
+                            Recent <strong>B.Tech graduate in Information Technology</strong> with a strong foundation
+                            in programming, databases, software development, and machine learning. Seeking an
+                            entry-level opportunity to apply my technical skills, contribute to real-world projects, and
+                            grow as a technology professional while delivering practical and scalable solutions.
+                        </p>
+                    </div>
+
+                    <div class="about-details-columns">
+                        <div class="about-col">
+                            <h4><i class="fa-solid fa-compass"></i> Engineering Philosophy</h4>
+                            <p>
+                                I believe in combining algorithmic rigor with practical software architecture. Whether
+                                constructing convolutional ensemble architectures for biomedical image diagnostics or
+                                wiring RS485 Modbus telemetry with microcontrollers and cloud analytics, I focus on
+                                measurable accuracy, performance, and clean maintainable code.
+                            </p>
+                        </div>
+                        <div class="about-col">
+                            <h4><i class="fa-solid fa-lightbulb"></i> Problem Solver & Collaborator</h4>
+                            <p>
+                                Actively participated in competitive hackathons and engineering sprints, honing
+                                resilience under tight deadlines, rapid prototype design, clear peer communication, and
+                                cross-functional team coordination.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="info-pills-row">
+                        <div class="info-pill">
+                            <span class="pill-label">Degree</span>
+                            <span class="pill-value">B.Tech IT (2022 - 2026)</span>
+                        </div>
+                        <div class="info-pill">
+                            <span class="pill-label">College</span>
+                            <span class="pill-value">QIS College of Engg & Tech</span>
+                        </div>
+                        <div class="info-pill">
+                            <span class="pill-label">Location</span>
+                            <span class="pill-value">Ongole, Andhra Pradesh</span>
+                        </div>
+                        <div class="info-pill">
+                            <span class="pill-label">Interests</span>
+                            <span class="pill-value">AI/ML, IoT, Full-Stack Dev</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card coursework-card">
+                    <h3><i class="fa-solid fa-book-open"></i> Relevant Coursework</h3>
+                    <div class="course-list">
+                        <div class="course-item">
+                            <div class="course-bullet"></div>
+                            <div>
+                                <strong>Data Structures & Algorithms (Basics)</strong>
+                                <p>Arrays, Linked Lists, Trees, Stacks, Queues, Sorting & Searching algorithms</p>
+                            </div>
+                        </div>
+                        <div class="course-item">
+                            <div class="course-bullet"></div>
+                            <div>
+                                <strong>Database Management Systems (DBMS)</strong>
+                                <p>Relational schema design, SQL querying, Normalization, ACID transactions</p>
+                            </div>
+                        </div>
+                        <div class="course-item">
+                            <div class="course-bullet"></div>
+                            <div>
+                                <strong>Object-Oriented Programming (OOPS)</strong>
+                                <p>Encapsulation, Inheritance, Polymorphism, Abstraction, Clean code patterns</p>
+                            </div>
+                        </div>
+                        <div class="course-item">
+                            <div class="course-bullet"></div>
+                            <div>
+                                <strong>Machine Learning Foundations</strong>
+                                <p>Supervised/Unsupervised models, Feature engineering, Neural Networks, Model
+                                    evaluation</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience-section hidden">
+            <div class="section-header">
+                <h2 class="section-title">Experience</h2>
+            </div>
+
+            <div class="timeline experience-timeline">
+                <div class="timeline-item glass-card">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-header">
+                        <div>
+                            <span class="badge-role">Internship</span>
+                            <h3 class="role-title">AI-ML Virtual Intern</h3>
+                            <h4 class="company-name">AI & Machine Learning Internship Program</h4>
+                        </div>
+                        <div class="timeline-date">
+                            <i class="fa-regular fa-calendar-days"></i>
+                            <span>Dec 2024 – Feb 2025</span>
+                        </div>
+                    </div>
+
+                    <ul class="timeline-points">
+                        <li>
+                            <i class="fa-solid fa-check"></i>
+                            <span>Gained comprehensive hands-on experience across supervised and unsupervised learning
+                                algorithms, deep learning mechanisms, and multi-layer neural network
+                                architectures.</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-check"></i>
+                            <span>Implemented an end-to-end Machine Learning pipeline encompassing raw dataset
+                                preparation, exploratory data analysis (EDA), feature engineering, hyperparameter
+                                tuning, model training, and performance evaluation.</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-check"></i>
+                            <span>Explored enterprise cloud AI tools on <strong>Amazon Web Services (AWS)</strong>
+                                including <strong>Amazon SageMaker</strong>, <strong>Amazon Bedrock</strong>, and
+                                <strong>Amazon Forecast</strong> to construct, deploy, and scale machine learning
+                                workloads in cloud environments.</span>
+                        </li>
+                    </ul>
+
+                    <div class="experience-tags">
+                        <span class="exp-tag">Machine Learning</span>
+                        <span class="exp-tag">Deep Learning</span>
+                        <span class="exp-tag">AWS SageMaker</span>
+                        <span class="exp-tag">AWS Bedrock</span>
+                        <span class="exp-tag">AWS Forecast</span>
+                        <span class="exp-tag">Neural Networks</span>
+                        <span class="exp-tag">Data Preparation</span>
+                        <span class="exp-tag">Model Evaluation</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section hidden">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-sub">Real-world systems combining IoT telemetry, Deep Learning computer vision, and
+                    Full-Stack web engineering.</p>
+            </div>
+
+            <!-- Project Filter Controls -->
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="ai-ml">AI & Deep Learning</button>
+                <button class="filter-btn" data-filter="iot-fullstack">IoT & Full Stack</button>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1: Smart Soil Nutrient and Moisture Monitoring System -->
+                <div class="project-card glass-card" data-category="iot-fullstack">
+                    <div class="project-image-wrap">
+                        <img src="soil_dashboard.jpg" alt="Smart Soil Nutrient and Moisture Monitoring Dashboard"
+                            class="project-preview-img" onclick="openProjectModal('soil-project')">
+                        <div class="project-image-overlay">
+                            <span class="preview-badge"><i class="fa-solid fa-satellite-dish"></i> Live Telemetry
+                                UI</span>
+                            <button class="preview-zoom-btn" onclick="openProjectModal('soil-project')"
+                                aria-label="Expand image details">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="project-top-row">
+                        <div class="project-icon-badge">
+                            <i class="fa-solid fa-seedling"></i>
+                        </div>
+                        <div class="project-timeline-tag">
+                            <i class="fa-regular fa-calendar"></i> Jan 2026 – May 2026
+                        </div>
+                    </div>
+
+                    <div class="project-category-badge">IoT & Precision Agriculture</div>
+                    <h3 class="project-title">Smart Soil Nutrient & Moisture Monitoring System</h3>
+
+                    <p class="project-description">
+                        An IoT-driven environmental monitoring and precision agriculture platform that integrates
+                        hardware telemetry with machine learning for instant crop suitability recommendations.
+                    </p>
+
+                    <div class="project-highlights">
+                        <div class="highlight-item">
+                            <i class="fa-solid fa-microchip"></i>
+                            <span>Integrated <strong>Modbus RS485 NPK sensors</strong> and capacitive soil moisture
+                                probes with Arduino UNO for continuous soil health telemetry.</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fa-solid fa-network-wired"></i>
+                            <span>Engineered a robust <strong>Node.js & Express</strong> backend linked with a
+                                <strong>Python Scikit-Learn Decision Tree</strong> model to process real-time serial
+                                stream data.</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fa-solid fa-chart-line"></i>
+                            <span>Constructed a responsive web dashboard with <strong>Chart.js</strong> providing
+                                real-time, hourly, and daily crop recommendations with automated CSV logging &
+                                export.</span>
+                        </div>
+                    </div>
+
+                    <div class="tech-stack-pills">
+                        <span>IoT</span>
+                        <span>Arduino UNO</span>
+                        <span>Modbus RS485</span>
+                        <span>Node.js</span>
+                        <span>Express.js</span>
+                        <span>Python</span>
+                        <span>Scikit-Learn</span>
+                        <span>Chart.js</span>
+                    </div>
+
+                    <div class="project-card-footer">
+                        <div class="footer-btn-group">
+                            <button class="project-details-btn" onclick="openProjectModal('soil-project')">
+                                <i class="fa-solid fa-circle-info"></i> Details
+                            </button>
+                            <button class="project-demo-btn" onclick="openDemoModal('soil-demo')">
+                                <i class="fa-solid fa-sliders"></i> Test Simulator
+                            </button>
+                        </div>
+                        <a href="#contact" class="project-discuss-link">
+                            Inquire <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 2: VecTorium Brain Tumor Classification -->
+                <div class="project-card glass-card" data-category="ai-ml">
+                    <div class="project-image-wrap">
+                        <img src="brain_tumor_ai.jpg" alt="VecTorium Deep Learning MRI Classification Interface"
+                            class="project-preview-img" onclick="openProjectModal('vectorium-project')">
+                        <div class="project-image-overlay">
+                            <span class="preview-badge"><i class="fa-solid fa-brain"></i> Grad-CAM & Ensemble</span>
+                            <button class="preview-zoom-btn" onclick="openProjectModal('vectorium-project')"
+                                aria-label="Expand image details">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="project-top-row">
+                        <div class="project-icon-badge accent-purple">
+                            <i class="fa-solid fa-brain"></i>
+                        </div>
+                        <div class="project-timeline-tag">
+                            <i class="fa-regular fa-calendar"></i> Oct 2025 – Nov 2025
+                        </div>
+                    </div>
+
+                    <div class="project-category-badge badge-dl">Deep Learning & Healthcare Vision</div>
+                    <h3 class="project-title">VecTorium: Hybrid Deep Learning Ensemble for Brain Tumor Classification
+                    </h3>
+
+                    <p class="project-description">
+                        A state-of-the-art multi-backbone deep neural ensemble engineered to detect and classify 4
+                        distinct MRI brain tumor classes with exceptional clinical accuracy.
+                    </p>
+
+                    <div class="project-highlights">
+                        <div class="highlight-item">
+                            <i class="fa-solid fa-layer-group"></i>
+                            <span>Engineered a custom ensemble (<strong>VecTorium</strong>) integrating frozen
+                                pre-trained CNN backbones: <strong>EfficientNetB3</strong>, <strong>ResNet50</strong>,
+                                and <strong>VGG16</strong> with GlobalAveragePooling2D feature fusion.</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fa-solid fa-sliders"></i>
+                            <span>Implemented automated image augmentation (<code>ImageDataGenerator</code>), adaptive
+                                learning rate decay (<code>ReduceLROnPlateau</code>), and <code>EarlyStopping</code> to
+                                counter overfitting.</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>Achieved <strong>96.73% Validation Accuracy</strong> and <strong>99.49% Training
+                                    Accuracy</strong> verified through multi-class confusion matrices and loss
+                                curves.</span>
+                        </div>
+                    </div>
+
+                    <div class="tech-stack-pills">
+                        <span>Python</span>
+                        <span>TensorFlow</span>
+                        <span>Keras</span>
+                        <span>EfficientNetB3</span>
+                        <span>ResNet50</span>
+                        <span>VGG16</span>
+                        <span>OpenCV</span>
+                        <span>Scikit-Learn</span>
+                        <span>NumPy</span>
+                        <span>Matplotlib</span>
+                    </div>
+
+                    <div class="project-card-footer">
+                        <div class="footer-btn-group">
+                            <button class="project-details-btn" onclick="openProjectModal('vectorium-project')">
+                                <i class="fa-solid fa-circle-info"></i> Details
+                            </button>
+                            <button class="project-demo-btn" onclick="openDemoModal('vectorium-demo')">
+                                <i class="fa-solid fa-flask-vial"></i> Test Classifier
+                            </button>
+                        </div>
+                        <a href="#contact" class="project-discuss-link">
+                            Inquire <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Skills Section -->
+        <section id="skills" class="skills-section hidden">
+            <div class="section-header">
+                <h2 class="section-title">Skills & Technologies</h2>
+                <p class="section-sub">Comprehensive technical toolkit built through coursework, internships, and deep
+                    project development.</p>
+            </div>
+
+            <div class="skills-categories-grid">
+                <!-- Category 1: Programming Languages -->
+                <div class="skill-category-card glass-card">
+                    <div class="cat-header">
+                        <div class="cat-icon"><i class="fa-solid fa-terminal"></i></div>
+                        <h3>Programming Languages</h3>
+                    </div>
+                    <div class="skill-meter-list">
+                        <div class="skill-meter-item">
+                            <div class="skill-info">
+                                <span class="skill-name"><i class="fa-brands fa-python"></i> Python</span>
+                                <span class="skill-level">Intermediate</span>
+                            </div>
+                            <div class="meter-bar">
+                                <div class="meter-fill" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-meter-item">
+                            <div class="skill-info">
+                                <span class="skill-name"><i class="fa-solid fa-database"></i> SQL</span>
+                                <span class="skill-level">Intermediate</span>
+                            </div>
+                            <div class="meter-bar">
+                                <div class="meter-fill" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-meter-item">
+                            <div class="skill-info">
+                                <span class="skill-name"><i class="fa-brands fa-js"></i> JavaScript</span>
+                                <span class="skill-level">Intermediate</span>
+                            </div>
+                            <div class="meter-bar">
+                                <div class="meter-fill" style="width: 75%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-meter-item">
+                            <div class="skill-info">
+                                <span class="skill-name"><i class="fa-brands fa-html5"></i> HTML5 & CSS3</span>
+                                <span class="skill-level">Intermediate</span>
+                            </div>
+                            <div class="meter-bar">
+                                <div class="meter-fill" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-meter-item">
+                            <div class="skill-info">
+                                <span class="skill-name"><i class="fa-brands fa-java"></i> Java</span>
+                                <span class="skill-level">Basic</span>
+                            </div>
+                            <div class="meter-bar">
+                                <div class="meter-fill" style="width: 60%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Category 2: Machine Learning & AI -->
+                <div class="skill-category-card glass-card">
+                    <div class="cat-header">
+                        <div class="cat-icon"><i class="fa-solid fa-brain"></i></div>
+                        <h3>AI, ML & Data Science</h3>
+                    </div>
+                    <div class="skill-meter-list">
+                        <div class="skill-meter-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Scikit-learn</span>
+                                <span class="skill-level">Intermediate</span>
+                            </div>
+                            <div class="meter-bar">
+                                <div class="meter-fill" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-meter-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Pandas & NumPy</span>
+                                <span class="skill-level">Intermediate</span>
+                            </div>
+                            <div class="meter-bar">
+                                <div class="meter-fill" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-meter-item">
+                            <div class="skill-info">
+                                <span class="skill-name">TensorFlow & Keras</span>
+                                <span class="skill-level">Intermediate</span>
+                            </div>
+                            <div class="meter-bar">
+                                <div class="meter-fill" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-meter-item">
+                            <div class="skill-info">
+                                <span class="skill-name">OpenCV & Matplotlib</span>
+                                <span class="skill-level">Intermediate</span>
+                            </div>
+                            <div class="meter-bar">
+                                <div class="meter-fill" style="width: 75%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-meter-item">
+                            <div class="skill-info">
+                                <span class="skill-name">PyTorch</span>
+                                <span class="skill-level">Basic</span>
+                            </div>
+                            <div class="meter-bar">
+                                <div class="meter-fill" style="width: 60%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Category 3: Web & Cloud Technologies -->
+                <div class="skill-category-card glass-card">
+                    <div class="cat-header">
+                        <div class="cat-icon"><i class="fa-solid fa-cloud"></i></div>
+                        <h3>Cloud & Web Systems</h3>
+                    </div>
+                    <div class="chips-cloud">
+                        <div class="tech-chip"><i class="fa-brands fa-node-js"></i> Node.js</div>
+                        <div class="tech-chip"><i class="fa-solid fa-server"></i> Express.js</div>
+                        <div class="tech-chip"><i class="fa-brands fa-aws"></i> AWS SageMaker</div>
+                        <div class="tech-chip"><i class="fa-brands fa-aws"></i> AWS Bedrock</div>
+                        <div class="tech-chip"><i class="fa-brands fa-aws"></i> AWS Forecast</div>
+                        <div class="tech-chip"><i class="fa-solid fa-chart-pie"></i> Chart.js</div>
+                        <div class="tech-chip"><i class="fa-brands fa-angular"></i> Angular Basics</div>
+                        <div class="tech-chip"><i class="fa-solid fa-leaf"></i> Spring Basics</div>
+                        <div class="tech-chip"><i class="fa-solid fa-cubes"></i> RESTful APIs</div>
+                    </div>
+                </div>
+
+                <!-- Category 4: Tools & Hardware -->
+                <div class="skill-category-card glass-card">
+                    <div class="cat-header">
+                        <div class="cat-icon"><i class="fa-solid fa-toolbox"></i></div>
+                        <h3>Tools & Hardware</h3>
+                    </div>
+                    <div class="chips-cloud">
+                        <div class="tech-chip"><i class="fa-brands fa-git-alt"></i> Git</div>
+                        <div class="tech-chip"><i class="fa-brands fa-github"></i> GitHub</div>
+                        <div class="tech-chip"><i class="fa-solid fa-code"></i> VS Code</div>
+                        <div class="tech-chip"><i class="fa-solid fa-book"></i> Jupyter Notebook</div>
+                        <div class="tech-chip"><i class="fa-solid fa-microchip"></i> Arduino UNO</div>
+                        <div class="tech-chip"><i class="fa-solid fa-network-wired"></i> Modbus RS485</div>
+                        <div class="tech-chip"><i class="fa-solid fa-file-excel"></i> Microsoft Excel</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="education-section hidden">
+            <div class="section-header">
+                <h2 class="section-title">Education</h2>
+            </div>
+
+            <div class="timeline education-timeline">
+                <!-- B.Tech -->
+                <div class="timeline-item glass-card">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-badge-year">2022 – 2026</div>
+                    <div class="timeline-edu-content">
+                        <h3>Bachelor of Technology (B.Tech)</h3>
+                        <div class="edu-specialization">Information Technology (IT)</div>
+                        <p class="edu-institution"><i class="fa-solid fa-school"></i> QIS College of Engineering and
+                            Technology, Ongole, Andhra Pradesh</p>
+                        <div class="edu-score-badge">
+                            <i class="fa-solid fa-award"></i> CGPA: <strong>8.3 / 10</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Intermediate -->
+                <div class="timeline-item glass-card">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-badge-year">2020 – 2022</div>
+                    <div class="timeline-edu-content">
+                        <h3>Board of Intermediate Education</h3>
+                        <div class="edu-specialization">MPC (Mathematics, Physics, Chemistry)</div>
+                        <p class="edu-institution"><i class="fa-solid fa-school"></i> Sri Chaitanya Junior College,
+                            Addanki, Andhra Pradesh</p>
+                        <div class="edu-score-badge">
+                            <i class="fa-solid fa-chart-simple"></i> Score: <strong>85.7%</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Secondary -->
+                <div class="timeline-item glass-card">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-badge-year">2020</div>
+                    <div class="timeline-edu-content">
+                        <h3>Secondary School Certificate (SSC)</h3>
+                        <div class="edu-specialization">General Secondary Curriculum</div>
+                        <p class="edu-institution"><i class="fa-solid fa-school"></i> ZPHS High School, Kondamanjuluru,
+                            Andhra Pradesh</p>
+                        <div class="edu-score-badge gold-badge">
+                            <i class="fa-solid fa-star"></i> Perfect Score: <strong>100%</strong> (10.0 GPA)
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="certifications-section hidden">
+            <div class="section-header">
+                <h2 class="section-title">Certifications</h2>
+                <p class="section-sub">Verified credentials earned through industry training and rigorous assessments.
+                </p>
+            </div>
+
+            <div class="certifications-grid">
+                <!-- Cert 1 -->
+                <div class="cert-card glass-card">
+                    <div class="cert-icon-wrap infosys-glow">
+                        <i class="fa-solid fa-layer-group"></i>
+                    </div>
+                    <div class="cert-info">
+                        <span class="cert-date"><i class="fa-regular fa-calendar-check"></i> June 11, 2025</span>
+                        <h3 class="cert-title">Spring and Angular Full Stack Developer</h3>
+                        <p class="cert-issuer">Infosys Springboard</p>
+                        <p class="cert-desc">Comprehensive training in modern frontend SPA architectures with Angular
+                            and robust backend microservices with Java Spring.</p>
+                    </div>
+                    <div class="cert-tag">Full Stack</div>
+                </div>
+
+                <!-- Cert 2 -->
+                <div class="cert-card glass-card">
+                    <div class="cert-icon-wrap eduskills-glow">
+                        <i class="fa-brands fa-python"></i>
+                    </div>
+                    <div class="cert-info">
+                        <span class="cert-date"><i class="fa-regular fa-calendar-check"></i> Oct – Dec 2024</span>
+                        <h3 class="cert-title">Python Full Stack Developer</h3>
+                        <p class="cert-issuer">EduSkills Academy</p>
+                        <p class="cert-desc">End-to-end Python web development, database modeling, RESTful API design,
+                            and asynchronous request handling.</p>
+                    </div>
+                    <div class="cert-tag">Python & Web</div>
+                </div>
+
+                <!-- Cert 3 -->
+                <div class="cert-card glass-card">
+                    <div class="cert-icon-wrap aws-glow">
+                        <i class="fa-brands fa-aws"></i>
+                    </div>
+                    <div class="cert-info">
+                        <span class="cert-date"><i class="fa-regular fa-calendar-check"></i> April 2025</span>
+                        <h3 class="cert-title">AWS Academy Cloud Foundations</h3>
+                        <p class="cert-issuer">Amazon Web Services (AWS)</p>
+                        <p class="cert-desc">Core competencies in AWS cloud infrastructure, compute instances, security
+                            models, storage buckets, and AI cloud services.</p>
+                    </div>
+                    <div class="cert-tag">Cloud Infrastructure</div>
+                </div>
+
+                <!-- Cert 4 -->
+                <div class="cert-card glass-card">
+                    <div class="cert-icon-wrap codetantra-glow">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <div class="cert-info">
+                        <span class="cert-date"><i class="fa-regular fa-calendar-check"></i> April 2025</span>
+                        <h3 class="cert-title">Python Programming</h3>
+                        <p class="cert-issuer">CodeTantra</p>
+                        <p class="cert-desc">Advanced algorithmic problem solving, object-oriented concepts, data
+                            structures, and code modularization in Python.</p>
+                    </div>
+                    <div class="cert-tag">Programming</div>
+                </div>
+            </div>
+
+            <!-- Hackathons / Extracurricular activities banner -->
+            <div class="activities-banner glass-card">
+                <div class="act-icon"><i class="fa-solid fa-trophy"></i></div>
+                <div class="act-content">
+                    <h3>Hackathons & Technical Activities</h3>
+                    <p>
+                        Active participant in competitive overnight hackathons, coding challenges, and collegiate
+                        engineering sprints. Strengthened teamwork, rapid prototyping, problem breakdown, technical
+                        communication, and collaborative execution under tight delivery windows.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section hidden">
+            <div class="section-header">
+                <h2 class="section-title">Contact</h2>
+                <p class="section-sub">I'm currently seeking entry-level software engineering, AI/ML, and tech
+                    positions. Feel free to reach out directly!</p>
+            </div>
+
+            <div class="contact-container">
+                <!-- Contact Info Column -->
+                <div class="contact-cards-col">
+                    <div class="contact-card glass-card">
+                        <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                        <div class="contact-details">
+                            <span class="contact-label">Email Me</span>
+                            <a href="mailto:muddanaahlaya@gmail.com" class="contact-val">muddanaahlaya@gmail.com</a>
+                        </div>
+                        <button class="copy-btn" onclick="copyToClipboard('muddanaahlaya@gmail.com', this)"
+                            title="Copy email address">
+                            <i class="fa-regular fa-copy"></i>
+                        </button>
+                    </div>
+
+                    <div class="contact-card glass-card">
+                        <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+                        <div class="contact-details">
+                            <span class="contact-label">Call / WhatsApp</span>
+                            <a href="tel:+919515937378" class="contact-val">+91 9515937378</a>
+                        </div>
+                        <button class="copy-btn" onclick="copyToClipboard('+919515937378', this)"
+                            title="Copy phone number">
+                            <i class="fa-regular fa-copy"></i>
+                        </button>
+                    </div>
+
+                    <div class="contact-card glass-card">
+                        <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <div class="contact-details">
+                            <span class="contact-label">Location</span>
+                            <span class="contact-val">Ongole, Andhra Pradesh, India</span>
+                        </div>
+                    </div>
+
+                    <div class="contact-card glass-card">
+                        <div class="contact-icon"><i class="fa-solid fa-file-pdf"></i></div>
+                        <div class="contact-details">
+                            <span class="contact-label">Curriculum Vitae</span>
+                            <span class="contact-val">Ahalya_resume.pdf</span>
+                        </div>
+                        <a href="Ahalya_resume.pdf" download="Ahalya_resume.pdf"
+                            class="download-icon-btn" title="Download Resume">
+                            <i class="fa-solid fa-arrow-down"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Contact Message Form -->
+                <div class="contact-form-col glass-card">
+                    <h3 class="form-title"><i class="fa-solid fa-message"></i> Send a Direct Message</h3>
+                    <form id="contact-form" onsubmit="handleFormSubmit(event)">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" placeholder="e.g. John Doe" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" placeholder="e.g. john@company.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject"
+                                placeholder="Opportunity / Project Collaboration" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4"
+                                placeholder="Hi Ahalya, I reviewed your profile and projects..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block" id="submit-btn">
+                            <span>Send Message</span>
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                        <div id="form-feedback" class="form-feedback"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="#home" class="logo" style="justify-content: center;"
+                    aria-label="Muddana Ahalya Portfolio Home">
+                    Muddana <span class="logo-accent">Ahalya</span>
+                </a>
+                <p>Muddana Ahalya &bull; B.Tech Information Technology</p>
+            </div>
+
+            <div class="footer-socials">
+                <a href="mailto:muddanaahlaya@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                <a href="tel:+919515937378" aria-label="Phone"><i class="fa-solid fa-phone"></i></a>
+                <a href="https://github.com/ahalyamuddana" target="_blank" rel="noopener noreferrer"
+                    aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://linkedin.com/in/muddana-ahalya" target="_blank" rel="noopener noreferrer"
+                    aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+
+            <p class="footer-copy">
+                &copy; 2026 Muddana Ahalya. Crafted with precision using modern HTML5, CSS3, and JavaScript.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Back to top floating button -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+        <i class="fa-solid fa-chevron-up"></i>
+    </button>
+
+    <!-- Project Deep-Dive Modal -->
+    <div class="modal-overlay" id="project-modal" onclick="closeProjectModal(event)">
+        <div class="modal-content glass-card" onclick="event.stopPropagation()">
+            <button class="modal-close" onclick="closeProjectModal()" aria-label="Close modal">&times;</button>
+            <div id="modal-body">
+                <!-- Injected via JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast"></div>
+
+    <!-- Script File -->
+    <script src="script.js"></script>
+</body>
+
+</html>
